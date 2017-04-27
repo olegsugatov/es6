@@ -151,3 +151,19 @@ var task = new Task();
 Task.bind();
 Task.call();
 Task.apply();
+
+// surface area function
+var surfaceAreaCalculator = function surfaceAreaCalculator(radius) {
+	return 4 * 3.14 * radius * radius;
+};
+
+var surfaceOfMars = surfaceAreaCalculator(3390);
+console.log('Mars surface is ' + surfaceOfMars);
+
+// percent from a number
+var percentageCalculator = function percentageCalculator(number, total) {
+	return number * 100 / total;
+	console.log('Percentage :' + number + ' from ' + total);
+};
+
+console.log('How much from december is gone ? ' + percentageCalculator(16, 31));

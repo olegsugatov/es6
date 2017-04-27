@@ -137,6 +137,25 @@ Task.call();
 Task.apply();
 
 
+// surface area function
+const surfaceAreaCalculator = (radius) => {
+	return 4 * 3.14 * radius * radius;
+}
+
+const surfaceOfMars = surfaceAreaCalculator(3390);
+console.log('Mars surface is ' + surfaceOfMars);
+
+// percent from a number
+const percentageCalculator = (number, total) => {
+	return number * 100 / total;
+	console.log(`Percentage :${number} from ${total}`);
+}
+
+console.log('How much from december is gone ? ' + percentageCalculator(16, 31));
+
+
+
+
 
 
 
