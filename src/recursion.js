@@ -39,10 +39,26 @@ const sequenceSum = (begin, end , step) => {
 	} else if (end === begin) {
 		return end;
 	} else {
-		return end + sequenceSum(step, end - step, step);
+		return end + sequenceSum(begin, end - step, step);
 	}
 };
 
 console.log("2, 6, 2 (12) = " + sequenceSum(2, 6, 2));
 console.log("1, 5, 1 (15) = " + sequenceSum(1, 5, 1));
 console.log("1, 5, 3 (5)  = " + sequenceSum(1, 5, 3));
+
+
+
+
+// Factorial from end to begin
+const teacherSum = (begin, end , step) => {
+	if (begin > end) {
+		return 0;
+	} else {
+		return begin + teacherSum(begin + step, end, step);
+	}
+};
+
+console.log("2, 6, 2 (12) = " + teacherSum(2, 6, 2));
+console.log("1, 5, 1 (15) = " + teacherSum(1, 5, 1));
+console.log("1, 5, 3 (5)  = " + teacherSum(1, 5, 3));
