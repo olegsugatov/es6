@@ -137,13 +137,21 @@ Task.call();
 Task.apply();
 
 
+
+// Hexlet
 // surface area function
+
 const surfaceAreaCalculator = (radius) => {
-	return 4 * 3.14 * radius * radius;
+	return 4 * 3.14 * _square(radius);
+	// return 4 * 3.14 * radius * radius;
+}
+const _square = (num) => {
+	return num * num;
 }
 
 const surfaceOfMars = surfaceAreaCalculator(3390);
 console.log('Mars surface is ' + surfaceOfMars);
+
 
 // percent from a number
 const percentageCalculator = (number, total) => {
@@ -153,17 +161,12 @@ const percentageCalculator = (number, total) => {
 
 console.log('How much from december is gone ? ' + percentageCalculator(16, 31));
 
+// Fahrenheits to Celsius
+const fahrToCels = (fahr) => {
+	return fahr - 32 * 5/9;
+}
 
-
-
-
-
-
-
-
-
-
-
+console.log("Convertation is " + fahrToCels(50));
 
 
 

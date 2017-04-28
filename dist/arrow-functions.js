@@ -152,9 +152,15 @@ Task.bind();
 Task.call();
 Task.apply();
 
+// Hexlet
 // surface area function
+
 var surfaceAreaCalculator = function surfaceAreaCalculator(radius) {
-	return 4 * 3.14 * radius * radius;
+	return 4 * 3.14 * _square(radius);
+	// return 4 * 3.14 * radius * radius;
+};
+var _square = function _square(num) {
+	return num * num;
 };
 
 var surfaceOfMars = surfaceAreaCalculator(3390);
@@ -167,3 +173,10 @@ var percentageCalculator = function percentageCalculator(number, total) {
 };
 
 console.log('How much from december is gone ? ' + percentageCalculator(16, 31));
+
+// Fahrenheits to Celsius
+var fahrToCels = function fahrToCels(fahr) {
+	return fahr - 32 * 5 / 9;
+};
+
+console.log("Convertation is " + fahrToCels(50));
